@@ -2,9 +2,7 @@
 
 ## Learning Goals
 
-- Build custom class constructors
-- Build class finders
-- Build class operators
+- Build advanced class methods to work with the `@@all` class variable
 
 ## Instructions
 
@@ -32,8 +30,9 @@ The `Song` class provides a class variable `@@all` to store all instances for
 `Song` instances have basic properties of a name and an artist name.
 
 You have to build class methods that interact on the class data of `@@all` and
-provide the rest of our program with a semantic API on the `Song` class with
-methods such as `Song.find_or_create_by_name("Blank Space")`.
+provide the rest of our program with a semantic API (Application Programming
+Interface) on the `Song` class with methods such as
+`Song.find_or_create_by_name("Blank Space")`.
 
 ### `Song.create`
 
@@ -120,8 +119,9 @@ Use [Array#sort_by](http://ruby-doc.org/core/Enumerable.html#method-i-sort_by).
 
 ### `Song.new_from_filename`
 
-Build a class constructor that accepts a filename in the format of `"<Artist
-Name> - <Song Name>.mp3"`, for example, "Taylor Swift - Blank Space.mp3".
+Build a class constructor that accepts a filename in the format of
+`"<Artist Name> - <Song Name>.mp3"`, for example, "Taylor Swift - Blank
+Space.mp3".
 
 Given `Song.new_from_filename("Taylor Swift - Blank Space.mp3")`, the
 constructor should return a new `Song` instance with `song_name` set to Blank
@@ -139,8 +139,7 @@ song.artist_name #=> "Taylor Swift"
 
 ### `Song.create_from_filename`
 
-Build a class constructor that accepts a filename in the format of `"<Artist
-Name> - <Song Name>.mp3"`, for example "Taylor Swift - Blank Space.mp3". The
+Build a class constructor that accepts a filename in the format of `"<Artist Name> - <Song Name>.mp3"`, for example "Taylor Swift - Blank Space.mp3". The
 `Song.create_from_filename` class method should not only parse the filename
 correctly but should also save the Song instance that was created.
 
